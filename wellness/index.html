@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-    <title>Hospital Website</title>
+    <title>Wellness Website</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
@@ -12,70 +12,70 @@
     
 <body>
     <div class="container">
-        <h2>Personal Information</h2>
         
-
-        <form class="form-group" name="form" action="hospital.php" method="post">
+        
+        <h4>Personal Information</h4> <br>
+        <form class="form-group" name="form" action="wellness.php" method="post">
 
             <div class="form-group row">
-                <label for="date" class= "col-2 col-form-label">Date </label>
-                    <div class="col-3">
+                <label for="date" class= "col-2 col-form-label">Date</label>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
                         <input type="date" class= "form-control" id="date" placeholder ="Enter date" name= "date" required="required" /> 
                     </div>                                                                                                               
             </div>
             <div class="form-group row">
                 <label for = "lname" class= "col-2 col-form-label">Last Name</label>
-                <div class="col-4">
-                    <input type="text" name= "lname" class= "form-control" id="lname" placeholder ="Enter your last name here" required="required"/> 
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <input type="text" name= "lname" class= "form-control" id="lname" placeholder ="Enter Last Name" required="required"/> 
                 </div>
             </div>
             <div class="form-group row">         
                 <label for="fname" class= "col-2 col-form-label">First Name</label>
-               <div class="col-4">
-                   <input type="text" name= "fname" class= "form-control" id="fname" placeholder ="Enter your first name here" required="required"/>
+               <div class="col-sm-6 col-md-4 col-lg-3">
+                   <input type="text" name= "fname" class= "form-control" id="fname" placeholder ="Enter First Name" required="required"/>
                 </div>
             </div>
             <div class="form-group row">
                 <label for="mobile" class= "col-2 col-form-label">Mobile Number</label>
-                <div class="col-4">
-                    <input type="tel" class= "form-control" id="mobile" placeholder ="12 3456 7890" name= "mobile" maxlength =10 minlength=10 required="required"/> 
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <input type="tel"  name= "mobile" class= "form-control" id="mobile" placeholder ="12 3456 7890" maxlength =10 minlength=10 required="required"/> 
                 </div>
             </div>
             <div class="form-group row">            
                 <label for="email" class= "col-2 col-form-label">Email:</label>
-                <div class="col-4">
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
                 </div>
             </div>
             <div class="form-group row">
                 <label for="dob" class= "col-2 col-form-label">Date of birth</label>
-                <div class="col-4">
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <input type="date" class= "form-control" id="dob" placeholder ="Enter date of birth" name= "dob" required="required" />
                 </div>
             </div>
             <div class="form-group row">
                 <label for="age" class= "col-2 col-form-label">Age</label>
-                <div class="col-4">
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <input type="number" class= "form-control" id="age" placeholder ="Enter age" name= "age" required="required" />
                 </div>
             </div>
             <div class="form-group row">
                 <label for="company" class= "col-2 col-form-label">Company</label>
-                <div class="col-4">
+                <div class="col-sm-6 col-md-4 col-lg-3">
                     <input type="text" name= "company" class= "form-control" id="company" placeholder ="Enter your company" required="required"/>
                 </div>
             </div>
             <div class="form-group row">      
                 <label for="location" class= "col-2 col-form-label">Location</label>
-                <div class="col-4">
-                    <input type="text" name= "location" class= "form-control" id="location" placeholder ="Enter your location" required="required"/> 
+                <div class="col-sm-6 col-md-4 col-lg-3">
+                    <input type="text" name= "location" class= "form-control" id="location" placeholder ="Enter your location" required="required"/> <br>
                 </div>
             </div>      
 
-        <div class="form-group row">  <!-- Checkbox Group !-->
-            <h4>Job type (please tick)</h4>
+        <div class="form-group ">  <!-- Checkbox Group !-->
+            <h4>Job type (please tick)</h4> <br>
                 <div class="checkbox">
-                    <label class= "col-2 col-form-label">
+                    <label>
                     <input type="checkbox" name="job" value="Labourer">
                      Labourer
                     </label>
@@ -128,13 +128,63 @@
                     <input type="checkbox"  name="job" />
                     Other (please specify)
                     </label> <span><input type = "text" name="other" required="required" /></span>
+                </div>         
+        </div>
+            
+    <div class= "form-check row">      <!-- Checkboxes Inline-->
+        <h5>Employment type (please tick)</h5>  <br>  
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="fullTime" value="fullTime">
+            <label class="form-check-label">Full-time</label>
+        </div>
 
-                </div>
-               
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="partTime" value="partTime">
+            <label class="form-check-label">Part-time</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="casual" value="casual">
+            <label class="form-check-label">Casual</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="contractor" value="contractor">
+            <label class="form-check-label">Contractor</label> 
+        </div>
+    </div>   <br>   
+    
+    <div class= "form-check row">      <!-- Shiftworker Radio Buttons Inline-->
+        <h5>Shiftworker (please tick)</h5>   <br>   
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="yes" value="yes" name="inlineRadioButtons" />
+            <label class="form-check-label">Yes</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="no" value="no" name="inlineRadioButtons" />
+            <label class="form-check-label">No</label>
+        </div>
+     </div>  <br> 
+            
+      <div class= "form-check row">      <!-- GP radio Buttons Inline-->
+        <h5>Do you have a GP that you visit regularly? (please tick)</h5>   <br>   
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="yes" value="yes" name="inlineRadioButtons" />
+            <label class="form-check-label">Yes</label>
+        </div>
+
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" id="no" value="no" name="inlineRadioButtons" />
+            <label class="form-check-label">No</label>
+        </div>
+     </div>    <br> 
+            
+          
             <div class="form-group">
                 <button type="submit" class="btn btn-primary">Submit</button>
             </div>
-        </div>
+            
     </form>
  </div>
 
